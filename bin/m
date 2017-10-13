@@ -4,5 +4,5 @@ const m = require('../server');
 
 const args = process.argv.slice(2);
 
-const response = m.generateResponse(args.join(' '));
-console.log(response);
+m.generateResponse(args.join(' '))
+  .then(console.log);

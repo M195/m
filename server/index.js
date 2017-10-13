@@ -1,5 +1,4 @@
-const natural = require('natural');
-
+const { getClassifier, } = require('./learn');
 const intents = require('./intents.json').intents;
 
 const handlers = {
@@ -11,23 +10,7 @@ const handlers = {
   },
 };
 
-const learnIntents = (intents) => {
-  const classifier = new natural.BayesClassifier();
-
-  for (var tag in intents) {
-    if (!intents.hasOwnProperty(tag)) continue;
-
-    const intent = intents[tag];
-    intent.patterns.forEach(pattern => classifier.addDocument(pattern, tag));
-  }
-
-  classifier.train();
-  return classifier;
-};
-
-const classifier = learnIntents(intents);
-
-const generateResponse = (text) => {
+const generateResponse = (text) => getClassifier().then(classifier => {
   const tag = classifier.classify(text);
 
   const intent = intents[tag];
@@ -38,7 +21,7 @@ const generateResponse = (text) => {
     return handlers[tag].call(null, text, response);  
   }
   return response;
-};
+});
 
 module.exports = { 
   generateResponse,
