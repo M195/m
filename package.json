@@ -1,0 +1,18 @@
+{
+  "name": "bot.calebissharp.com",
+  "version": "1.0.0",
+  "description": "A bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Caleb Sharp",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "natural": "^0.5.4",
+    "node-telegram-bot-api": "^0.28.0",
+    "sentiment": "^4.0.1"
+  }
+}
