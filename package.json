@@ -4,7 +4,8 @@
   "description": "A little console based chatbot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node .",
+    "dev": "nodemon ."
   },
   "author": "Caleb Sharp",
   "license": "MIT",
