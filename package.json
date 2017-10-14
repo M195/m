@@ -1,8 +1,9 @@
 {
-  "name": "m",
+  "name": "m-bot",
   "version": "1.0.0",
   "description": "A little console based chatbot",
   "main": "index.js",
+  "bin": "bin/m",
   "scripts": {
     "start": "node .",
     "dev": "nodemon ."
