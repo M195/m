@@ -1,7 +1,7 @@
 const natural = require('natural');
 const intents = require('./intents.json').intents;
 
-const learn = (intents) => {
+const learn = (intents, filename) => {
   const classifier = new natural.BayesClassifier();
 
   for (var tag in intents) {
@@ -13,15 +13,15 @@ const learn = (intents) => {
 
   classifier.train();
   
-  classifier.save(__dirname + '/classifier.json', () => {});
+  classifier.save(filename, () => {});
 
   return classifier;
 };
 
-const getClassifier = () => new Promise((resolve) => {
-  natural.BayesClassifier.load(__dirname + '/classifier.json', null, (err, classifier) => {
+const getClassifier = (filename) => new Promise((resolve) => {
+  natural.BayesClassifier.load(filename, null, (err, classifier) => {
     if (err) {
-      resolve(learn(intents));
+      resolve(learn(intents, filename));
     }
     resolve(classifier);
   });
