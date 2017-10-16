@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "node .",
-    "dev": "nodemon ."
+    "dev": "nodemon .",
+    "test": "jest"
   },
   "author": "Caleb Sharp",
   "license": "MIT",
