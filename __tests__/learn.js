@@ -30,22 +30,25 @@ test('learn: it saves the classifier into a json file after learning', () => {
     expect(classifier).toBeInstanceOf(natural.BayesClassifier);
     expect(err).toEqual(null);
   });
-
-  expect(true);
 });
 
-test('getClassifier: loads classifier from a file if it exists', () => {
+test('getClassifier: loads classifier from a file if it exists', (d) => {
   getClassifier(classifierFile)
-    .then(c => expect(c).toBeInstanceOf(natural.BayesClassifier));
+    .then(c => {
+      expect(c).toBeInstanceOf(natural.BayesClassifier);
+      d();
+    });
 });
 
-test('getClassifier: creates a new classifier from intents.json file if file doesn\'t exists', () => {
+test('getClassifier: creates a new classifier from intents.json file if file doesn\'t exists', (d) => {
   getClassifier(__dirname + '/notafile.json')
     .then(c => {
-      expect(c).toEqual(learn(intentsFile));
+      expect(c).toEqual(learn(intentsFile, __dirname + '/notafile.json'));
+      d();
     });
 });
 
 afterAll(() => {
   fs.unlinkSync(classifierFile);
+  fs.unlinkSync(__dirname + '/notafile.json');
 });
