@@ -1,2 +1,2 @@
 # M
-a little console based chatbot
+A little console based chatbot.
