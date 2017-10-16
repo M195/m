@@ -10,7 +10,7 @@ const handlers = {
   },
 };
 
-const generateResponse = (text) => getClassifier().then(classifier => {
+const generateResponse = (text) => getClassifier(__dirname + '/classifier.json').then(classifier => {
   const tag = classifier.classify(text);
 
   const intent = intents[tag];
