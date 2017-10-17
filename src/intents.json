@@ -108,9 +108,9 @@
         "Remind me in 15 minutes"
       ],
       "responses": [
-        "Reminder for ${text} set for ${time}",
-        "At ${time}, you should ${text}",
-        "The time is ${time}, and you should ${text}"
+        "Reminder for {{{text}}} set for {{{time}}}",
+        "At {{{time}}}, you should {{{text}}}",
+        "The time is {{{time}}}, and you should {{{text}}}"
       ]
     },
     "random": {
@@ -122,9 +122,9 @@
         "Give me a number"
       ],
       "responses": [
-        "Here you go: ${number}",
-        "The number is: ${number}",
-        "How about: ${number}"
+        "Here you go: {{{number}}}",
+        "The number is: {{{number}}}",
+        "How about: {{{number}}}"
       ]
     }
   }

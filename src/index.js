@@ -1,12 +1,17 @@
 const { getClassifier, } = require('./learn');
+const Handlebars = require('handlebars');
 const intents = require('./intents.json').intents;
 
 const handlers = {
-  reminder(text, response) {
-    return response.replace('{reminder.text}', `'${text}'`);
+  reminder(text) {
+    return {
+      text: `'${text}'`,
+    };
   },
-  random(text, response) {
-    return response.replace('${number}', Math.floor(Math.random() * 100));
+  random() {
+    return {
+      number: Math.floor(Math.random() * 100),
+    };
   },
 };
 
@@ -18,7 +23,9 @@ const generateResponse = (text) => getClassifier(__dirname + '/classifier.json')
   const response = intent.responses[Math.floor(Math.random() * intent.responses.length)];
 
   if (handlers[tag]) {
-    return handlers[tag].call(null, text, response);  
+    const data = handlers[tag].call(null, text, response);
+    const template = Handlebars.compile(response);
+    return template(data);
   }
   return response;
 });
