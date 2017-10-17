@@ -51,7 +51,8 @@
       ],
       "responses": [
         "My name is M195bot!",
-        "You can call me M195bot, or M for short."
+        "You can call me M195bot, or M for short.",
+        "I am M195bot, but my friends call me M."
       ]
     },
     "compliment": {
@@ -79,7 +80,9 @@
         "Who are you?"
       ],
       "responses": [
-        "I'm a bot made by Caleb Sharp (https://github.com/calebissharp)"
+        "I'm a bot made by Caleb Sharp (https://github.com/calebissharp)",
+        "I was created by Caleb Sharp (https://github.com/calebissharp)",
+        "Such a personal question to ask a bot, don't you think?"
       ]
     },
     "insult": {
@@ -92,7 +95,8 @@
       ],
       "responses": [
         "I'm sorry that's the way you feel.",
-        "That's not very nice!"
+        "That's not very nice!",
+        "You should respect your superiors!"
       ]
     },
     "reminder": {
@@ -104,7 +108,9 @@
         "Remind me in 15 minutes"
       ],
       "responses": [
-        "Reminder for ${text} set for ${time}"
+        "Reminder for ${text} set for ${time}",
+        "At ${time}, you should ${text}",
+        "The time is ${time}, and you should ${text}"
       ]
     },
     "random": {
@@ -116,7 +122,9 @@
         "Give me a number"
       ],
       "responses": [
-        "Here you go: ${number}"
+        "Here you go: ${number}",
+        "The number is: ${number}",
+        "How about: ${number}"
       ]
     }
   }
