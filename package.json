@@ -14,12 +14,7 @@
   "author": "Caleb Sharp",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "cors": "^2.8.4",
-    "express": "^4.16.1",
-    "natural": "^0.5.4",
-    "node-telegram-bot-api": "^0.28.0",
-    "sentiment": "^4.0.1"
+    "natural": "^0.5.4"
   },
   "devDependencies": {
     "jest": "^21.2.1"
