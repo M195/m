@@ -104,7 +104,7 @@
         "Remind me in 15 minutes"
       ],
       "responses": [
-        "Reminder for ${text} set for ${time}"
+        "Reminder for {{{text}}} set."
       ]
     },
     "random": {
@@ -116,7 +116,7 @@
         "Give me a number"
       ],
       "responses": [
-        "Here you go: ${number}"
+        "Here you go: {{number}}"
       ]
     }
   }
