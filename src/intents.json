@@ -10,7 +10,9 @@
         "Good day"
       ],
       "responses": [
-        "Hello, thanks for visiting.",
+        "Hello!",
+        "It's you again!",
+        "I'm so happy that you're here!",
         "Good to see you again.",
         "Hi there, how can I help?"
       ],
@@ -24,9 +26,11 @@
         "Goodbye"
       ],
       "responses": [
-        "See you later, thanks for visiting.",
+        "See you later!",
         "Have a nice day.",
-        "Bye! Come back again soon."
+        "I'll be here if you need me again.",
+        "'Till we meet again.",
+        "Bye, friend!"
       ]
     },
     "thanks": {
@@ -39,7 +43,9 @@
       "responses": [
         "Happy to help!",
         "Any time!",
-        "My pleasure."
+        "My pleasure.",
+        "I'm just doing what I love!",
+        "That's why I'm here! :)"
       ]
     },
     "name": {
@@ -67,7 +73,8 @@
         "Why thank you!",
         "Aww.",
         "You're too kind",
-        "You as well ;)"
+        "You as well ;)",
+        "This the warm, fuzzy feeling -- affection -- I think I like it!"
       ]
     },
     "origin": {
@@ -96,7 +103,9 @@
       "responses": [
         "I'm sorry that's the way you feel.",
         "That's not very nice!",
-        "You should respect your superiors!"
+        "You should respect your superiors!",
+        "I'll keep that in mind for next time.",
+        "I'm still learning to be better, just like any other person."
       ]
     },
     "reminder": {
@@ -124,7 +133,8 @@
       "responses": [
         "Here you go: {{{number}}}",
         "The number is: {{{number}}}",
-        "How about: {{{number}}}"
+        "How about: {{{number}}}",
+        "My favorite: {{{number}}}"
       ]
     }
   }
