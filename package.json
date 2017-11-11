@@ -9,8 +9,10 @@
   "scripts": {
     "start": "node .",
     "dev": "nodemon .",
+    "build": "tsc",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "postinstall": "yarn build"
   },
   "author": "Caleb Sharp",
   "license": "MIT",
