@@ -1,8 +1,11 @@
 #!/usr/bin/env node
 
-const m = require('../src');
+const { createM } = require('../dist');
 
 const args = process.argv.slice(2);
 
-m.generateResponse(args.join(' '))
-  .then(console.log); // eslint-disable-line no-console
+createM()
+  .then(m => {
+    const res = m.ask(args.join(' '))
+    console.log(res)
+  })
