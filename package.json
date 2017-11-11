@@ -9,15 +9,33 @@
   "scripts": {
     "start": "node .",
     "dev": "nodemon .",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "author": "Caleb Sharp",
   "license": "MIT",
   "dependencies": {
+    "@types/handlebars": "^4.0.36",
+    "@types/natural": "^0.2.33",
     "handlebars": "^4.0.10",
     "natural": "^0.5.4"
   },
   "devDependencies": {
-    "jest": "^21.2.1"
+    "@types/jest": "^21.1.5",
+    "jest": "^21.2.1",
+    "typescript": "^2.6.1"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/preprocessor.js"
+    },
+    "testMatch": [
+      "**/__tests__/*.(ts|tsx|js)"
+    ]
   }
 }
