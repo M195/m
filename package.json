@@ -1,6 +1,6 @@
 {
   "name": "m-bot",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "A little console based chatbot",
   "main": "src/index.js",
   "bin": {
