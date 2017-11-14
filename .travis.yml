@@ -1,6 +1,15 @@
 language: node_js
 node_js:
-  - "8"
+- '8'
 cache:
   directories:
-    - "node_modules"
+  - node_modules
+deploy:
+  provider: npm
+  email: epicsharp11@gmail.com
+  api_key:
+    secure: DWjgT2g25okczARYmb5U4IsgQYsGkchdTFFYs5lTBoJeaNSwRlgjPA9tpBUpfPN0JSoIFe/YqCrfeCGl9Wl4fErSOzEvAeKj3ccUTbDGN52DndVhK0OuKVTksAnsSt7CBWNy/JQudBvjbczFlcMpo5N7ztFveZ/de+Z5kB08V0hWZhPmsst6T44mnK+pNHFsTfoXQVg2+sgYKx/Nn52k5oR42bkqcSStQ8hQujqwnfRiRO7jyB0q3QhMMhTjkrkhItrRVxIWLj6koPbRzZ4RjY9bsaXlMtHyGFPK99aRWg1EKheazlDyOe4pYNEQzI1FkJIA1JCoEUZEZxtc2lwivCPpYcYoX2PprIMw/aP9z+BnVfq1qJ9UVOuoNK4RyVOVFK30CiM/mIB5es4Xk20qXJe+8wuX6DA5BqWsKXLfDCf0xxIpheSszn4c3JzdP2HRerhCi+/u/XMHVlOQ3Hz2rVvHOvc8Py+xrLapb7SA+oMndOOmFnjKo659GJS6wsa0xIvfKNt75oNYAifu+hnPlvcpXKCjsiHTUGmAQGYhkkB3Hr4jJjS+4MDukvsm4mXnoU+j5/mo7ZyClDfJTCiI5rG8YAxu3YvVe6sYIUlKVOgR/zp6t7ZDSLcVkWh2AS+IyJGxey9IDomIsvqcbAFu4oyFDxfXrCbQiz3sTTt5WZo=
+  on:
+    tags: true
+    branch: master
+    repo: M195/m
