@@ -7,12 +7,10 @@
     "m": "bin/m"
   },
   "scripts": {
-    "start": "node .",
-    "dev": "nodemon .",
     "build": "tsc",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "postinstall": "yarn build"
+    "test:watch": "npm run test -- --watch",
+    "postinstall": "npm run build"
   },
   "author": "Caleb Sharp",
   "license": "MIT",
