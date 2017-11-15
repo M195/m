@@ -1,11 +1,14 @@
 # M
-A little console based chatbot.
+A little console based chatbot/framework.
 
 ## Getting Started
-To install the latest version:
+Make sure you have yarn installed by following the instructions at
+[https://yarnpkg.com/en/docs/install](https://yarnpkg.com/en/docs/install)
+
+To install the latest version of M:
 
 ```bash
-$ npm install -g m-bot
+$ yarn global add m-bot
 ```
 
 Then you can run `m` anywhere, followed by what you want to say.
