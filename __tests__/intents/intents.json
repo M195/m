@@ -1,0 +1,7 @@
+[
+  {
+    "tag": "hello",
+    "patterns": ["hello"],
+    "responses": ["hello {{name}}"]
+  }
+]
